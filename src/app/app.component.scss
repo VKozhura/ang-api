@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+.user-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.user-card {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.user-buttons {
+    display: flex;
+    width: 150px;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+button {
+    
+    background-color: blue;
+    color: white;
+}
+
+button[disabled] {
+    background-color: grey;
+    color: black;
+    cursor: not-allowed;
+}

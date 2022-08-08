@@ -1,0 +1,16 @@
+<h1>Hello ReqRes users!</h1>
+
+<mat-list class="user-list">
+        <mat-card class='user-card' *ngFor="let user of users">
+            <mat-card-header>
+              <mat-card-title>{{user.first_name}} {{user.last_name}}</mat-card-title>
+              <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src={{user.avatar}} alt="Photo of a Shiba Inu" width="200" height="200">
+        </mat-card>
+</mat-list>
+
+<div class="user-buttons">
+    <button [disabled]="page === 1" mat-raised-button color="primary" (click)="getUsersBack()">Назад</button>
+    <button [disabled]="isDisabled" mat-raised-button color="primary" (click)="getUsersForward()">Вперед</button>
+</div>
